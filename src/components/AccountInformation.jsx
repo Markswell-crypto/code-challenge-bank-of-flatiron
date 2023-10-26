@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import TransactionList from './TransactionList'
 import AddTransactions from './AddTransactions' 
+import SearchTransaction from './SearchTransaction'
 
 function AccountInformation() {
     const [transaction, setTransaction] = useState([])
@@ -14,7 +15,7 @@ function AccountInformation() {
     setQuery(e.target.value)
   return (
     <div>
-        <Search handleSearch={handleSearch} />
+        <SearchTransaction handleSearch={handleSearch} />
         <AddTransactions /> 
         <TransactionList transactions={transaction} />
     </div>
