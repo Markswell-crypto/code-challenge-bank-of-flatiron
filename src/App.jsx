@@ -7,8 +7,8 @@ function App() {
   return (
     <>
      <div className='ui raised segment'>
-      <div>
-          {/* <Header /> */}
+      <div class="header item">
+          <Header />
       </div>
       <div>
         <AccountInformation />
