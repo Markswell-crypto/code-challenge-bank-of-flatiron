@@ -99,18 +99,11 @@
       "id": 14
     },
     {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
+      "date": "2023-10-26",
+      "description": "Movie",
+      "category": "Entertainment",
+      "amount": "-100",
       "id": 15
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 16
     }
   ]
 }

@@ -10,6 +10,7 @@ function App() {
       <div class="header item">
           <Header />
       </div>
+      <br></br>
       <div>
         <AccountInformation />
       </div>
