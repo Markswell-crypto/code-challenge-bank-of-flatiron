@@ -18,8 +18,8 @@ function AccountInformation() {
   return (
     <div>
         <SearchTransaction handleSearch={handleSearch} />
-        <AddTransactions /> 
-        <TransactionList transactions={transaction} />
+        <AddTransactions  /> 
+        <TransactionList transactions={transaction} query={query} />
     </div>
   )
 }

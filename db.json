@@ -104,6 +104,34 @@
       "category": "Entertainment",
       "amount": "-100",
       "id": 15
+    },
+    {
+      "date": "2023-10-24",
+      "description": "Movie-Theatre",
+      "category": "Entertainment",
+      "amount": "-50",
+      "id": 16
+    },
+    {
+      "date": "",
+      "description": "Movie-Theatre",
+      "category": "Entertainment",
+      "amount": "-100",
+      "id": 17
+    },
+    {
+      "date": "2023-11-02",
+      "description": "Movie-Theatre",
+      "category": "Entertainment",
+      "amount": 0,
+      "id": 18
+    },
+    {
+      "date": "",
+      "description": "Movie-Theatre",
+      "category": "Entertainment",
+      "amount": 0,
+      "id": 19
     }
   ]
 }

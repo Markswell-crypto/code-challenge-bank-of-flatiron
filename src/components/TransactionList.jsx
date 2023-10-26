@@ -1,8 +1,13 @@
 import React from "react";
 import Transaction from "./Transaction";
 
-function TransactionList({ transactions }) {
-  const list = transactions.map((item) => (
+function TransactionList({ transactions, query }) {
+  const filteredTransactions = Array.isArray(transactions)
+  ? transactions.filter((transaction) =>
+      transaction.description.toLowerCase().includes(query.toLowerCase())
+    )
+  : [];
+  const list = filteredTransactions.map((item) => (
     <Transaction
       key={item.id}
       date={item.date}
