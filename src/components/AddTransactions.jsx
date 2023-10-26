@@ -5,7 +5,7 @@ function AddTransactions() {
     const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
     const [category, setCategory] = useState("")
-    const [amount, setAmount] = useState(0)
+    const [amount, setAmount] = useState("")
     //Define a handleSubmit function that is called when the form is submitted
     function handleSubmit(e) {
         e.preventDefault()

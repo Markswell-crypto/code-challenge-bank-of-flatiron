@@ -1,16 +1,18 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import AccountInformation from './components/AccountInformation'
+import Header from './components/Header'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
      <div className='ui raised segment'>
-      <Header>
-        <h1>THE BANK OF FLATIRON</h1>
-      </Header>
-      <AccountInformation />
+      <div>
+          {/* <Header /> */}
+      </div>
+      <div>
+        <AccountInformation />
+      </div>
      </div>
     </>
   )
