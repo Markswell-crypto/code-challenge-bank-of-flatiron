@@ -2,11 +2,12 @@ import React from "react";
 import Transaction from "./Transaction";
 
 function TransactionList({ transactions, query }) {
-  const filteredTransactions = Array.isArray(transactions)
-  ? transactions.filter((transaction) =>
+  // Filter transactions based on the query and convert to lowercase for case-insensitive search
+  const filteredTransactions = Array.isArray(transactions)? transactions.filter((transaction) =>
       transaction.description.toLowerCase().includes(query.toLowerCase())
     )
   : [];
+  // Map the filtered transactions to Transaction components for rendering
   const list = filteredTransactions.map((item) => (
     <Transaction
       key={item.id}

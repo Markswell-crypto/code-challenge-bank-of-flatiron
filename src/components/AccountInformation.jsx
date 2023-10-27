@@ -3,23 +3,26 @@ import TransactionList from './TransactionList'
 import SearchTransaction from './SearchTransaction'
 
 function AccountInformation() {
+    // Define state variables for transactions, query, form fields, and their initial values
     const [transaction, setTransaction] = useState([])
     const [query, setQuery] = useState("")
     const [date, setDate] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
     const [amount, setAmount] = useState('');
-
+    // useEffect to fetch transactions when the query changes
   useEffect(() => {
     // Fetch the transactions based on the query
     fetch(`http://localhost:3000/transactions?query=${query}`)
       .then((resp) => resp.json())
       .then(transaction => setTransaction(transaction))
   }, [query])
+    // Handle the search input change
   function handleSearch(e) {
     e.preventDefault()
     setQuery(e.target.value)
   }
+  // Handle form submission to add a new transaction
   function handleSubmit(e) {
     e.preventDefault();
     let transactionObj = {
@@ -28,7 +31,7 @@ function AccountInformation() {
         category: category,
         amount: parseFloat(amount),
     }
-
+    // Send a POST request to add a new transaction
     fetch('http://localhost:3000/transactions', {
       method: 'POST',
       headers: {
@@ -38,6 +41,7 @@ function AccountInformation() {
     })
       .then((response) => response.json())
       .then((data) => {
+    // Add the new transaction to the existing list
         const newTransaction = [...transaction, data]
         setTransaction(newTransaction)
       })
@@ -46,6 +50,7 @@ function AccountInformation() {
         alert('An error occurred. Please try again later.');
       });
   }
+    // Handle transaction added event (could be used to refresh the list)
   function handleTransactionAdded() {
     // Refresh the transactions when a new transaction is added
     fetch('http://localhost:3000/transactions')
@@ -57,7 +62,9 @@ function AccountInformation() {
   }
   return (
     <div>
+      {/* Render the search input */}
         <SearchTransaction handleSearch={handleSearch} />
+      {/* Render the form for adding a new transaction */}
         <div className="ui segment">
           <form onSubmit={handleSubmit} className="ui form">
             <div className="inline fields">
@@ -71,7 +78,8 @@ function AccountInformation() {
             </button>
           </form>
     </div>
-        <TransactionList transactions={transaction} query={query} />
+     {/* Render the list of transactions using TransactionList */}
+      <TransactionList transactions={transaction} query={query} />
     </div>
   )
 }
