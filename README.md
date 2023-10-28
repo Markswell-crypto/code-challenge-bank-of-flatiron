@@ -40,18 +40,29 @@ To view your transactions, open the application in your browser.Use the search b
 Optionally, sort or delete transactions.
 
 ### Code Overview
-[App.jsx]: This is the main component that renders the search bar, transaction list, and transaction form.
-[SearchTransaction.jsx]: This is a simple component that renders the search bar.
-[TransactionList.jsx]: This component renders the list of transactions based on the query and handles the logic for filtering and sorting the transactions.
-[Transaction.jsx]: This is a simple component that renders a single transaction.
-[AccountInformation.jsx]: One of the main file components that defines the variables for transactions, query, form fields and their initial value.
-[db.json]: JSON database file for storing transaction data.
-Dependancies
-React.
-Semantic-ui-css (for styling)
-JSON server (for local data management)
-Contributors
-If you'd like to contribute to this project, feel free to submit a pull request. Before submitting a pull request, please make sure your code is well-documented and adheres to the existing code style.
++ [App.jsx]: This is the main component that renders the search bar, transaction list, and transaction form.
++ [SearchTransaction.jsx]: This is a simple component that renders the search bar.
++ [TransactionList.jsx]: This component renders the list of transactions based on the query and handles the logic for filtering and sorting the transactions.
++ [Transaction.jsx]: This is a simple component that renders a single transaction.
++ [AccountInformation.jsx]: One of the main file components that defines the variables for transactions, query, form fields and their initial value.
++ [db.json]: JSON database file for storing transaction data.
 
-License
-This project is open-source and available under the MIT License
+#### Dependancies
+* React.
+* Semantic-ui-css (for styling)
+* JSON server (for local data management)
+
+## License
+This app is licensed under the MIT License.
+Copyright (c) 2023 Markswell Osoro Ogutu
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Contact
+Markswell-Crypto - osoromarkswell80@gmail.com 
