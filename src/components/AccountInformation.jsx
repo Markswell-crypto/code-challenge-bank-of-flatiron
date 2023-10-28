@@ -44,21 +44,16 @@ function AccountInformation() {
     // Add the new transaction to the existing list
         const newTransaction = [...transaction, data]
         setTransaction(newTransaction)
+         // Clear input fields by resetting state
+      setDate('');
+      setDescription('');
+      setCategory('');
+      setAmount('');
       })
       .catch((error) => {
         console.error('Error:', error);
         alert('An error occurred. Please try again later.');
       });
-  }
-    // Handle transaction added event (could be used to refresh the list)
-  function handleTransactionAdded() {
-    // Refresh the transactions when a new transaction is added
-    fetch('http://localhost:3000/transactions')
-      .then((resp) => resp.json())
-      .then((data) => {
-        let addedTransaction = [...transaction, data]
-        setTransaction(addedTransaction)
-      })
   }
   return (
     <div>
