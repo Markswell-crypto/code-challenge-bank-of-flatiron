@@ -20,7 +20,6 @@ The Bank Transaction Application is a React-based web app that allows you to man
 Before running the application, ensure that you have Node.js and npm installed on your system.
 
 1. Clone this repository to your local machine:
-       git clone git@github.com:shekhs-murega/Bank-of-flatiron.git
 2. Navigate to the server directory and run npm install to install the server dependencies.
 3. Run npm start to start the server. The server will run on port 3000 by default.
 4. Navigate back to the root directory and run npm install to install the app dependencies.
