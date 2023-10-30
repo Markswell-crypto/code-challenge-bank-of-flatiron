@@ -1,4 +1,5 @@
 #root {
+  background-color: rgb(61, 42, 165);
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -68,4 +69,10 @@ body {
   color: white;
   font-style: italic;
   border-bottom: 3px;
+}
+#btn:hover{
+  background-color: brown;
+}
+.inline-fields:hover {
+background-color: bisque;
 }

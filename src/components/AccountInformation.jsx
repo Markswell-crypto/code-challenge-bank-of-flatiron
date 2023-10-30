@@ -68,7 +68,7 @@ function AccountInformation() {
               <input value={category} onChange={(e) => setCategory(e.target.value)} type="text" name="category" placeholder="Category" />
               <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" name="amount" placeholder="Amount" step="0.01" />
             </div>
-            <button className="ui button" type="submit">
+            <button className="ui button" type="submit" id="btn" >
               Add Transaction
             </button>
           </form>
